@@ -9,11 +9,13 @@ function App() {
  const increment =() =>
  {
      setCount(count+1);
+     setRed(!isRed);
  };
   return(
       <div className={"app"}>
 
         <div>
+            <h1 className={isRed ? 'red' : ''}>change my color!</h1>
             <Hello/>
             <button onClick={increment}>Increment</button>
             <h1>{count}</h1>
