@@ -1,12 +1,20 @@
 import React from 'react';
 import Hello from "./sayHello";
+import Tweet from "./tweet";
 function App() {
 
 
   return(
-    <div>
-   <Hello/>
-    </div>
+      <div className={"app"}>
+
+        <div>
+            <Hello/>
+            <Tweet  Name = "imane"/>
+            <Tweet  Name = "john"/>
+            <Tweet  Name = "hihi"/>
+        </div>
+
+      </div>
   );
 
 }
