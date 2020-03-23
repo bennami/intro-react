@@ -1,17 +1,15 @@
 import React from "react";
 import './App.css';
-function Tweet({Name}) {
+function Tweet(props) {
 
-    return(
-<div className={"tweet"}>
+return(
+    <div className={"tweet"}>
       <div>
-          <h3>{Name}</h3>
-          <p>tweet message goes here</p>
+          <h3>{props.Name}</h3>
+          <p>{props.Message}</p>
           <h3>number of likes</h3>
       </div>
-</div>
+    </div>
     );
-
 }
-
 export default Tweet;
